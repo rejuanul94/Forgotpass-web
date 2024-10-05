@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Reset</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="reset-container">
+        <h2>Reset Your Password</h2>
+
+        <!-- Step 1: Email or Phone Input -->
+        <form id="resetForm">
+            <div id="step1">
+                <label for="emailPhone">Enter your phone number or email:</label>
+                <input type="text" id="emailPhone" name="emailPhone" placeholder="Phone or Email" required>
+                <button type="button" id="requestReset">Send Reset Link</button>
+            </div>
+
+            <!-- Step 2: New Password -->
+            <div id="step2" style="display: none;">
+                <label for="newPassword">New Password:</label>
+                <input type="password" id="newPassword" name="newPassword" placeholder="New password" required>
+
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" required>
+
+                <button type="submit" id="resetPassword">Reset Password</button>
+            </div>
+        </form>
+
+        <p><a href="login.html">Back to Login</a></p> <!-- Replace with actual login page link -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
