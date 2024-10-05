@@ -21,7 +21,7 @@ document.getElementById('resetForm').addEventListener('submit', function(event) 
     if (newPassword === confirmPassword && newPassword.length >= 6) {
         alert('Password has been reset successfully.');
         // Redirect to the login page after resetting (replace the link)
-        window.location.href = "https://rxyznltech.netlify.app";
+        window.location.href = "https://rxyzntech.netlify.app";
     } else {
         alert('Passwords do not match or the password is too short (minimum 6 characters).');
     }
